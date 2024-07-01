@@ -102,6 +102,18 @@ h6 {
     width: 300px;
     left: -100%;
   }
+  .stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .stack-icon {
+    margin-top: 1rem;
+  }
+  .image-circle {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -538,7 +550,7 @@ section,
 }
 
 .image-circle {
-  width: 100%;
+  width: 300px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -659,8 +671,30 @@ section,
   width: 15%;
 }
 
-.stack-svg-icon {
-  margin-left: 1.9rem;
+.stack-container {
+  display: flex;
+}
+
+.stack-icon {
+  width: 180px;
+  height: auto;
+  padding: 0 5px;
+  object-fit: contain;
+}
+.stack-icon-svg {
+  width: 240px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+@media (max-width: 575px) {
+  .stack-icon {
+    width: 140px;
+  }
+  .stack-icon-svg {
+    width: 190px;
+    margin-left: 20px;
+    overflow: hidden;
+  }
 }
 
 /*--------------------------------------------------------------
